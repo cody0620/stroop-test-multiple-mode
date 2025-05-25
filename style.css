@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f5f5f5;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  #test {
+    position: relative;
+    margin-top: 2rem;
+  }
+  .progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+  }
+  .stimulus {
+    font-size: 4rem;
+    margin: 2rem auto 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-origin: center;
+    pointer-events: none; /* 允許下方按鈕可點擊 */
+  }
+  .options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+  }
+  .options button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  button, select {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+  }

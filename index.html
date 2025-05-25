@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stroop Test 練習</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Stroop Test 練習</h1>
+
+    <div id="settings">
+      <label for="mode">模式：</label>
+      <select id="mode">
+        <option value="classic">一般模式</option>
+        <option value="reverse">反向模式</option>
+        <option value="frenzy">題目干擾模式</option>
+        <option value="english">國際化模式</option>
+        <option value="rotate">翻轉教室模式</option>
+      </select>
+
+      <label for="numQuestions">題數：</label>
+      <select id="numQuestions">
+        <option value="10">10 題</option>
+        <option value="20">20 題</option>
+        <option value="30">30 題</option>
+        <option value="40">40 題</option>
+        <option value="50">50 題</option>
+        <option value="60">60 題</option>
+      </select>
+
+      <button id="startBtn">開始測驗</button>
+    </div>
+
+    <div id="test" style="display:none;">
+      <div id="progress" class="progress"></div>
+      <div id="stimulus" class="stimulus"></div>
+      <div id="options" class="options"></div>
+    </div>
+
+    <div id="result" style="display:none;">
+      <p id="resultText"></p>
+      <p id="wrongDetail"></p>
+      <button id="copyBtn" style="display:none;">複製結果</button>
+      <button id="restartBtn">終止測驗</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
